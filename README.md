@@ -47,36 +47,36 @@ Control on which ProcessWire templates the Crisp widget appears:
 #### Visibility Rules
 
 - **Logged-in users only** — widget is shown exclusively to logged-in
-  ProcessWire users [1]
-- **Hidden roles** — hide the widget from users with specific roles [1]
+  ProcessWire users
+- **Hidden roles** — hide the widget from users with specific roles
 
 ---
 
 ### Widget Appearance
 
 - **Widget position** — set the widget position: `bottom_right` (default)
-  or `bottom_left` [1]
+  or `bottom_left`
 - **Widget color** — set the widget color theme using a Crisp color name
-  (e.g. `pink`, `blue`, `green`) [1]
+  (e.g. `pink`, `blue`, `green`)
 
 ---
 
 ### Chat Behaviour
 
 - **Auto-open on page load** — automatically opens the chat window when
-  the page loads [1]
+  the page loads
 
 ---
 
 ### Locale / Language
 
-The module supports three language detection modes [1]:
+The module supports three language detection modes:
 
 | Mode | Description |
 |---|---|
-| **Auto** | Detected from ProcessWire's multi-language system, with fallback to PHP system locale [2] |
-| **Browser default** | Crisp detects the language from the visitor's browser settings [1] |
-| **Force** | Forces a specific language for all visitors [1] |
+| **Auto** | Detected from ProcessWire's multi-language system, with fallback to PHP system locale |
+| **Browser default** | Crisp detects the language from the visitor's browser settings |
+| **Force** | Forces a specific language for all visitors |
 
 When using **Force** mode, provide an ISO language code (e.g. `en`, `fr`, `de`,
 `es`, `ru`, `zh`).  
@@ -88,7 +88,7 @@ Full list of supported codes: https://docs.crisp.chat/guides/chatbox-sdks/web-sd
 
 When a ProcessWire user is logged in, their **email** and **name** are
 automatically synced with the Crisp widget. If a User Verification Secret
-is configured, HMAC verification is applied automatically [1].
+is configured, HMAC verification is applied automatically.
 
 ---
 
@@ -96,7 +96,7 @@ is configured, HMAC verification is applied automatically [1].
 
 When Crisp redirects back after OAuth, the module automatically reads
 `crisp_website_id` and `crisp_verify` GET parameters, saves them to the
-module configuration, and redirects to a clean URL [1].
+module configuration, and redirects to a clean URL.
 
 ---
 
