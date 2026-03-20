@@ -11,7 +11,7 @@
  * @license MIT
  */
 
-class Crisp extends WireData implements Module, ConfigurableModule {
+class CrispLiveChat extends WireData implements Module, ConfigurableModule {
 
     /**
      * Module info required by ProcessWire
@@ -65,21 +65,21 @@ class Crisp extends WireData implements Module, ConfigurableModule {
         $input   = $this->wire('input');
         $modules = $this->wire('modules');
 
-        if ((string) $input->get('name') !== 'Crisp') return;
+        if ((string) $input->get('name') !== 'CrispLiveChat') return;
 
         $newId     = (string) $input->get->text('crisp_website_id');
         $newVerify = (string) $input->get->text('crisp_verify');
 
         if (!empty($newId)) {
-            $configData = $modules->getModuleConfigData('Crisp');
+            $configData = $modules->getModuleConfigData('CrispLiveChat');
             $configData['website_id'] = $this->wire('sanitizer')->text($newId);
             if (!empty($newVerify)) {
                 $configData['website_verify'] = $this->wire('sanitizer')->text($newVerify);
             }
-            $modules->saveModuleConfigData('Crisp', $configData);
+            $modules->saveModuleConfigData('CrispLiveChat', $configData);
 
             $adminUrl = rtrim($this->wire('config')->urls->httpAdmin, '/');
-            $this->wire('session')->redirect($adminUrl . '/module/edit?name=Crisp&crisp_saved=1');
+            $this->wire('session')->redirect($adminUrl . '/module/edit?name=CrispLiveChat&crisp_saved=1');
         }
     }
 
@@ -420,7 +420,7 @@ HTML;
             // Build callback URL without double slashes
             // urls->admin already includes the full path like /narzan/
             $adminUrl    = rtrim(wire('config')->urls->httpAdmin, '/');
-            $callbackUrl = $adminUrl . '/module/edit?name=Crisp';
+            $callbackUrl = $adminUrl . '/module/edit?name=CrispLiveChat';
             $callback    = urlencode($callbackUrl);
 
             $adminEmail  = wire('user')->email;
