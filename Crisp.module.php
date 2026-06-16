@@ -6,7 +6,7 @@
  * Integrates the Crisp live chat widget into ProcessWire sites.
  * Automatically syncs logged-in user data (email, name) with Crisp.
  *
- * @author  Maxim Alex <https://github.com/mxmsmnv>
+ * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
  * @version 1.0.0
  * @license MIT
  */
@@ -21,8 +21,8 @@ class CrispLiveChat extends WireData implements Module, ConfigurableModule {
             'title'    => 'Crisp Live Chat',
             'version'  => '1.0.0',
             'summary'  => 'Adds the Crisp live chat widget to your ProcessWire site. Supports automatic user identity sync and HMAC verification.',
-            'author'   => 'Maxim Alex',
-            'href'     => 'https://crisp.chat',
+            'author'   => 'Maxim Semenov',
+            'href'     => 'https://smnv.org',
             'singular' => true,
             'autoload' => true,
             'icon'     => 'comment',

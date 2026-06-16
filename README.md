@@ -4,6 +4,10 @@ Integrates the [Crisp](https://crisp.chat) live chat widget into your ProcessWir
 
 ---
 
+**Author:** Maxim Semenov  
+**Website:** [smnv.org](https://smnv.org)  
+**Email:** [maxim@smnv.org](mailto:maxim@smnv.org)
+
 If this project helps your work, consider supporting future development: [GitHub Sponsors](https://github.com/sponsors/mxmsmnv) or [smnv.org/sponsor](https://smnv.org/sponsor/).  
 
 ## Requirements
@@ -109,7 +113,7 @@ module configuration, and redirects to a clean URL.
 
 ## Author
 
-[Maxim Alex](https://github.com/mxmsmnv)  
+[Maxim Semenov](https://github.com/mxmsmnv)  
 
 
 ---
