@@ -4,6 +4,8 @@ Integrates the [Crisp](https://crisp.chat) live chat widget into your ProcessWir
 
 ---
 
+If this project helps your work, consider supporting future development: [GitHub Sponsors](https://github.com/sponsors/mxmsmnv) or [smnv.org/sponsor](https://smnv.org/sponsor/).  
+
 ## Requirements
 
 - ProcessWire 3.0 or higher
