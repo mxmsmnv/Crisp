@@ -1,0 +1,15 @@
+.crisp-module-config,
+.crisp-module-config * {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.crisp-module-config label,
+.crisp-module-config .pw-no-select,
+.crisp-module-config .InputfieldHeader,
+.crisp-module-config .notes,
+.crisp-module-config .description {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}

@@ -7,7 +7,7 @@
  * Automatically syncs logged-in user data (email, name) with Crisp.
  *
  * @author  Maxim Semenov <maxim@smnv.org> (smnv.org)
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  */
 
@@ -19,7 +19,7 @@ class Crisp extends WireData implements Module, ConfigurableModule {
     public static function getModuleInfo() {
         return [
             'title'    => 'Crisp Live Chat',
-            'version'  => 100,
+            'version'  => 101,
             'summary'  => 'Adds the Crisp live chat widget to your ProcessWire site. Supports automatic user identity sync and HMAC verification.',
             'author'   => 'Maxim Semenov',
             'href'     => 'https://smnv.org',
@@ -386,7 +386,14 @@ HTML;
         $data    = array_merge(self::getDefaultConfig(), $data);
         $modules = wire('modules');
 
+        $config = wire('config');
+        $adminCss = __DIR__ . '/assets/admin.css';
+        if (is_file($adminCss)) {
+            $config->styles->add($config->urls->siteModules . 'Crisp/assets/admin.css?v=' . filemtime($adminCss));
+        }
+
         $inputfields = new InputfieldWrapper();
+        $inputfields->addClass('crisp-module-config');
 
         // --- Tab: Connection ---
         $tConn = new InputfieldWrapper();
