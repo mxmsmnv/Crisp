@@ -2,8 +2,8 @@
 
 Crisp adds the [Crisp](https://crisp.chat) live chat widget to a ProcessWire site, with automatic identity sync for logged-in users and full control over where, when and how the widget appears.
 
-**Author:** Maxim Semenov  
-**Website:** [smnv.org](https://smnv.org)  
+**Author:** Maxim Semenov
+**Website:** [smnv.org](https://smnv.org)
 **Email:** [maxim@smnv.org](mailto:maxim@smnv.org)
 
 If this project helps your work, consider supporting future development: [GitHub Sponsors](https://github.com/sponsors/mxmsmnv) or [smnv.org/sponsor](https://smnv.org/sponsor/).
@@ -43,8 +43,8 @@ See [AGENTS.md](AGENTS.md) for AI-agent usage and safety guidance.
 
 ## Author
 
-Maxim Semenov  
-[smnv.org](https://smnv.org)  
+Maxim Semenov
+[smnv.org](https://smnv.org)
 [maxim@smnv.org](mailto:maxim@smnv.org)
 
 ## License
